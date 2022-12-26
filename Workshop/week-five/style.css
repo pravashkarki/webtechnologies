@@ -26,8 +26,6 @@ body {
     background-color: rgb(12, 59, 46);
     padding: 5%;
     color: #ffffff;
-    height: 100vh;
-    display: flex;
 }
 
 h1 {
@@ -82,16 +80,24 @@ Responsive Web Design.
 */
 
 @media screen and (max-width: 1024px) {
-
+    .button a {
+        font-size: 16px;
+    }
 }
 
 @media screen and (max-width: 768px) {
-    .container {
-        flex-direction: column;
+
+    .content-wrapper {
+        padding-bottom: 50px;
     }
 
-    .content-wrapper, figure {
+    .content-wrapper,
+    figure {
         width: 100%;
+    }
+
+    figure {
+        height: 300px;
     }
 }
 
