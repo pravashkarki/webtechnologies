@@ -27,6 +27,7 @@ body {
     padding: 5%;
     color: #ffffff;
     height: 100vh;
+    display: flex;
 }
 
 h1 {
@@ -43,7 +44,6 @@ h2 {
 
 figure {
     width: 50%;
-    overflow: hidden;
     background-size: cover;
     background-repeat: no-repeat;
 }
@@ -86,7 +86,13 @@ Responsive Web Design.
 }
 
 @media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
 
+    .content-wrapper, figure {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 420px) {
