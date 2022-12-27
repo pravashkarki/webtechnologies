@@ -12,5 +12,11 @@ body {
 }
 
 .two-column-layout {
-    background: white;
+    max-height: 450px;
+    display: flex;
+}
+
+.left-column,
+.right-column {
+    width: 50%;
 }
